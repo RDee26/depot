@@ -57,3 +57,4 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Manual
 gem 'rubocop', require: false
+gem 'rubocop-shopify', require: false

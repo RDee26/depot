@@ -1,0 +1,42 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+  EnforcedStyle: always
+  Exclude:
+    - 'actionview/test/**/*.builder'
+    - 'actionview/test/**/*.ruby'
+    - 'actionpack/test/**/*.builder'
+    - 'actionpack/test/**/*.ruby'
+    - 'activestorage/db/migrate/**/*.rb'
+    - 'activestorage/db/update_migrate/**/*.rb'
+    - 'actionmailbox/db/migrate/**/*.rb'
+    - 'actiontext/db/migrate/**/*.rb'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'config/initializers/routing_draw.rb'
+
+Layout/LineLength:
+  Exclude:
+    - 'config/routes.rb'
+
+# Naming/VariableName:
+#   Exclude:
+#     - 'app/models/concerns/hubspot/products.rb'
+
+# Lint/UselessAssignment:
+#   Exclude:
+#     - 'app/models/concerns/hubspot/products.rb'
+
+# Style/NestedTernaryOperator:
+#   Exclude:
+#     - 'app/models/concerns/hubspot/products.rb'
+
+# Style/IdenticalConditionalBranches:
+#   Exclude:
+#     - 'app/controllers/concerns/airpay_payment_handler.rb'
+
+Lint/UnreachableCode:
+  Enabled: false
